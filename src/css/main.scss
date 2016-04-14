@@ -1,0 +1,72 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+  color: white;
+  background: #3399ff;
+}
+
+.body {
+  text-align: center;
+  margin: 48px 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  height: 18px;
+  background: #3399ff;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.footer-heart {
+  color: red;
+}
+
+.time-unit-wrap {
+  margin: 0 25px;
+  display: inline-block;
+}
+
+.unit-block {
+  display: inline-block;
+  margin: 10px;
+}
+
+.digit {
+  color: white;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+
+.time-circle {
+  height: 100px;
+  background: #444;
+  width: 100px;
+  border-radius: 50%;
+  margin: 10px;
+
+  &.active {
+    background: #b3e7ff;
+  }
+}
