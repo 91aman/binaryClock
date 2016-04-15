@@ -21,17 +21,17 @@ function parseTime() {
 
     return {
         hours: {
-            value: hours.toString(),
+            value: leftPad(hours.toString(), 2, 0),
             units: convertToBinary(hours % 10, 4),
             tens: convertToBinary(Math.floor(hours / 10), 2)
         },
         minutes: {
-            value: minutes.toString(),
+            value: leftPad(minutes.toString(), 2, 0),
             units: convertToBinary(minutes % 10, 4),
             tens: convertToBinary(Math.floor(minutes / 10), 3)
         },
         seconds: {
-            value: seconds.toString(),
+            value: leftPad(seconds.toString(), 2, 0),
             units: convertToBinary(seconds % 10, 4),
             tens: convertToBinary(Math.floor(seconds / 10), 3)
         }
